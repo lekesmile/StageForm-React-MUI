@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import Button from '@material-ui/core/Button'
 import { List, ListItem, ListItemText } from '@material-ui/core';
 import '../App.css'
+import AppBar from '@material-ui/core/AppBar';
 
+import Toolbar from '@material-ui/core/Toolbar'
+import TypoGraphy from '@material-ui/core/Typography'
 
 export default class FormUserInfo3 extends Component {
     previous = (e) => {
@@ -17,6 +20,17 @@ export default class FormUserInfo3 extends Component {
         
         return (
             <div className="App">
+                <AppBar color="primary" position="static">
+                    <Toolbar>
+                        <TypoGraphy variant="title"
+                            color="inherit"
+                        >
+                            Comfirm your Details: Stage 3
+           </TypoGraphy>
+                    </Toolbar>
+                </AppBar>
+
+
                 <h1>Comfirm details</h1>
 
                 <List>

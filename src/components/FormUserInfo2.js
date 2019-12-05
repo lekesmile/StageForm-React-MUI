@@ -3,6 +3,8 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
 import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar'
+import TypoGraphy from '@material-ui/core/Typography'
 import '../App.css'
 
 
@@ -22,13 +24,17 @@ export default class FormUserInfo2 extends Component {
 
         return (
             <MuiThemeProvider>
-                <React.Fragment>
+                <AppBar color="primary" position="static">
+                    <Toolbar>
+                        <TypoGraphy variant="title"
+                            color="inherit"
+                        >
+                            Enter your Details: Stage 2
+           </TypoGraphy>
+                    </Toolbar>
+                </AppBar>
 
-                    <AppBar
-                        position='static'
-                        color='default'
-                        title="Enter your Details"
-                    />
+                  
 
                     <form >
                         <br />
@@ -77,7 +83,7 @@ export default class FormUserInfo2 extends Component {
                             back
                         </Button>
                     </form>
-                </React.Fragment>
+              
             </MuiThemeProvider>
         )
     }
