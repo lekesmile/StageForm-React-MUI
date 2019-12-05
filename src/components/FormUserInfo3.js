@@ -17,7 +17,7 @@ export default class FormUserInfo3 extends Component {
         const {
             value: { firstname, lastname, email, dbo, city, country }
         } = this.props
-        
+
         return (
             <div className="App">
                 <AppBar color="primary" position="static">
@@ -26,7 +26,7 @@ export default class FormUserInfo3 extends Component {
                             color="inherit"
                         >
                             Comfirm your Details: Stage 3
-           </TypoGraphy>
+                        </TypoGraphy>
                     </Toolbar>
                 </AppBar>
 

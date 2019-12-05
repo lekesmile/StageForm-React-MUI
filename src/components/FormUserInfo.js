@@ -31,7 +31,7 @@ export default class FormUserInfo extends Component {
                             color="inherit"
                         >
                             Enter your Details : Stage 1
-           </TypoGraphy>
+                        </TypoGraphy>
                     </Toolbar>
                 </AppBar>
 

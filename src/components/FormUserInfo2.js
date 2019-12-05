@@ -30,60 +30,60 @@ export default class FormUserInfo2 extends Component {
                             color="inherit"
                         >
                             Enter your Details: Stage 2
-           </TypoGraphy>
+                        </TypoGraphy>
                     </Toolbar>
                 </AppBar>
 
-                  
 
-                    <form >
-                        <br />
-                        <TextField
-                            placeholder="email"
-                            label="email"
-                            onChange={handleChange}
-                            defaultValue={value.email}
-                            name="email"
-                        />
-                        <br />
-                        <TextField
-                            placeholder="city"
-                            label="city"
-                            name="city"
-                            onChange={handleChange}
-                            defaultValue={value.city}
-                        />
-                        <br />
-                        <TextField
-                            placeholder="country"
-                            label="country"
-                            name="country"
-                            onChange={handleChange}
-                            defaultValue={value.country}
-                        />
-                        <br />
-                        <br />
-                        <Button
-                            className="ButtonBom"
-                            label="Continue"
-                            variant="contained"
-                            color="primary"
-                            onClick={this.continue}
-                        >
-                            next
+
+                <form >
+                    <br />
+                    <TextField
+                        placeholder="email"
+                        label="email"
+                        onChange={handleChange}
+                        defaultValue={value.email}
+                        name="email"
+                    />
+                    <br />
+                    <TextField
+                        placeholder="city"
+                        label="city"
+                        name="city"
+                        onChange={handleChange}
+                        defaultValue={value.city}
+                    />
+                    <br />
+                    <TextField
+                        placeholder="country"
+                        label="country"
+                        name="country"
+                        onChange={handleChange}
+                        defaultValue={value.country}
+                    />
+                    <br />
+                    <br />
+                    <Button
+                        className="ButtonBom"
+                        label="Continue"
+                        variant="contained"
+                        color="primary"
+                        onClick={this.continue}
+                    >
+                        next
                         </Button>
 
-                        <Button
-                            className="ButtonBom"
-                            label="Continue"
-                            variant="contained"
-                            color="primary"
-                            onClick={this.previous}
-                        >
-                            back
+                    <Button
+                        className="ButtonBom"
+                        label="Continue"
+                        variant="contained"
+                        color="primary"
+                        onClick={this.previous}
+                    >
+                        back
                         </Button>
-                    </form>
-              
+                </form>
+
             </MuiThemeProvider>
         )
     }
