@@ -64,6 +64,16 @@ export default class FormUserInfo3 extends Component {
                 >
                     back
                         </Button>
+                {''}
+                <Button
+                    className="BottonBom"
+                    label="Continue"
+                    variant="contained"
+                    color="primary"
+                    // onClick={this.previous}
+                >
+                    Submit
+                        </Button>
             </div>
         )
     }
