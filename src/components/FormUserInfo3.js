@@ -15,7 +15,7 @@ export default class FormUserInfo3 extends Component {
     }
     render() {
         const {
-            value: { firstname, lastname, email, dbo, city, country }
+            value: { firstname, lastname, email, dob, city, country }
         } = this.props
 
         return (
@@ -44,13 +44,13 @@ export default class FormUserInfo3 extends Component {
                         <ListItemText primary="Email" secondary={email} />
                     </ListItem>
                     <ListItem>
-                        <ListItemText primary="Dbo" secondary={dbo} />
+                        <ListItemText primary="Dbo" secondary={dob} />
                     </ListItem>
                     <ListItem>
                         <ListItemText primary="City" secondary={city} />
                     </ListItem>
                     <ListItem>
-                        <ListItemText primary="Country" value={country} />
+                        <ListItemText primary="Country" secondary={country} />
                     </ListItem>
                 </List>
                 <br />
